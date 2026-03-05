@@ -19,8 +19,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>new arrivals</h4>
-              <h2>sixteen products</h2>
+              <h4>Beans</h4>
+              <h2>Terbaik Kami</h2>
             </div>
           </div>
         </div>
@@ -29,11 +29,7 @@
     <!-- Banner Ends Here -->
     <div class="products">
       <div class="container">
-        <?php $this->load->view('our_product/mouse') ; ?>
-        <?php $this->load->view('our_product/mousepad') ; ?>
-        <?php $this->load->view('our_product/keyboard') ; ?>
-        <?php $this->load->view('our_product/headset') ; ?>
-        <?php $this->load->view('our_product/kursi') ; ?>
+        <?php $this->load->view('our_product/Gayo_Aceh') ; ?>
       </div>
     </div>
     <div class="container-fluid bg-danger">
@@ -46,7 +42,7 @@
         <div class="row">
           <div class="col-md-12">            
               <b>
-                <p>Made &copy; 2023 AAW STORE. </p>
+                <p>Made &copy; 2024 Toko Kopi Tanjoe. </p>
               </b>    
           </div>
         </div>

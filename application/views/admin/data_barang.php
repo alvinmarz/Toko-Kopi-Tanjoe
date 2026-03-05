@@ -43,13 +43,7 @@
                                     <label for="exampleInputPassword1" class="form-label">Kategori Barang</label>
                                     <select class="custom-select custom-select-lg mb-3 form-control" name="kategori">
                                         <option selected>Pilih Kategori</option>
-                                        <option value="Keyboard">Keyboard</option>
-                                        <option value="Kursi">Kursi</option>
-                                        <option value="Mouse">Mouse</option>
-                                        <option value="Mousepad">Mousepad</option>
-                                        <option value="Headset">Headset</option>
-                                        <option value="Vga">VGA</option>
-                                        <option value="Game">GAME</option>
+                                        <option value="Gayo_Aceh">Gayo Aceh</option>                                                              
                                     </select>
                                 </div>
                                 <div class="mb-3">
@@ -137,7 +131,7 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                    <div class="text-muted">Copyright &copy; Toko Kopi Tanjoe 2024</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;

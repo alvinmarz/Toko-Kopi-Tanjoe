@@ -4,12 +4,12 @@
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Core</div>
                     
-                    <a aria-current="page" href="<?=base_url('admin/dashboard')?>" <?=$this->uri->segment(2) == 'dashboard' ? 'class="active nav-link"' : 'class="nav-link"' ?>>                    
+                    <a aria-current="page" href="<?=base_url('admin/dashboard')?>" <?=$this->uri->segment(2) == 'dashboard' ? 'class="active nav-link"' : 'class="nav-link"' ?>>
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>                    
                     
-                    <a aria-current="page" href="<?=base_url('admin/pesan')?>" <?=$this->uri->segment(2) == 'pesan' ? 'class="active nav-link"' : 'class="nav-link"' ?>>                    
+                    <a aria-current="page" href="<?=base_url('admin/detail_pesanan')?>" <?=$this->uri->segment(2) == 'pesan' ? 'class="active nav-link"' : 'class="nav-link"' ?>>                    
                         <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
                         Pesan
                     </a>                                        

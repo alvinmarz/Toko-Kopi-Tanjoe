@@ -89,13 +89,11 @@ a.filled-button:hover {
 }
 
 .products-heading {
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/products-heading2.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/Product_Kopi.jpg);
 	/* background-image:  url(../images/products-heading2.jpg); */
 }
-.products-heading-mouse {
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/mouse_lainnya2.jpg);
-	background-size: cover;
-	background-position: center;
+.products-heading-gayoaceh {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coffee-cup__720s.jpg);
 	
 }
 .products-heading-keyboard {
@@ -392,7 +390,7 @@ header .navbar {
 
 .banner-item-01 {
 	background-position-y: top;
-	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/slide_2.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/Kopi1.jpg);
 	height: 90vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -402,7 +400,7 @@ header .navbar {
 
 .banner-item-02 {
 	background-position-y: top;
-	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/slide_4.png);
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/Kopi2.jpg);
 	height: 90vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -410,7 +408,7 @@ header .navbar {
 
 .banner-item-03 {
 	background-position-y: top;
-	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/slide_3.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/home/Kopi3.jpg);
 	height: 90vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1142,4 +1140,5 @@ footer .inner-content p a {
 		right: 0;
 		bottom: 0;
 	}
+	  
 }

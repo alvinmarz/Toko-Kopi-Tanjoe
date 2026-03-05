@@ -6,7 +6,7 @@
         <main>
             <div class="container-fluid px-4">
                 <h1 class="mt-4">Data</h1>
-                <div class="btn btn-sm btn-success">No. Invoice : <?= $invoice->id ?></div>
+                <div class="btn btn-sm btn-success">No. Invoice : <?= $invoice->id_invoice ?></div>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Data Mesaage / Pesan dari Customer</li>
                 </ol>
@@ -37,20 +37,16 @@
                     </tr>
                 <?php endforeach; ?>
                 <tr>
-            <td colspan="4" align="right">Grand Total </td>
-            <td align="right">Rp. <?php echo number_format($total, 0, ',', '.'); ?> </td>
-        </tr>
-
-
+                    <td colspan="4" align="right">Grand Total </td>
+                    <td align="right">Rp. <?php echo number_format($total, 0, ',', '.'); ?> </td>
+                </tr>
             </table>
-            
-            
-            <a href="<?=base_url('admin/invoice');?>" class="btn btn-sm btn-danger" ><i class="fa-solid fa-circle-chevron-left"></i> Kembali</a>
+            <a href="<?= base_url('admin/invoice'); ?>" class="btn btn-sm btn-danger"><i class="fa-solid fa-circle-chevron-left"></i> Kembali</a>
         </div>
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                    <div class="text-muted">Copyright &copy; Toko Kopi Tanjoe 2024</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;

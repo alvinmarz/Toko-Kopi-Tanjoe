@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets_login/css/bootstrap.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="<?= base_url() ?>assets_login/css/style.css">
-    <title>Login #3</title>
+    <title>Register</title>
 </head>
 <body>
     <div class="half">
-        <div class="bg order-1 order-md-2" style="background-image: url('https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); background-position: center;"></div>
+        <div class="bg order-1 order-md-2" style="background-image: url('https://elscoffee.com/content/uploads/2022/04/Kopi.jpg'); background-position: center;"></div>
         <div class="contents order-2 order-md-1">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6">
                         <div class="form-block">
                             <div class="text-center mb-5">
-                                <h3>Login to <b style="font-weight: 700;"><span style="color: #121212;"> AAW</span> <spa style="color: orangered; "> STORE</spa></b></h3>
+                                <h3>Login to <b style="font-weight: 700;"><span style="color: #121212;"> Toko Kopi </span> <spa style="color: orangered; "> Tanjoe</spa></b></h3>
                                 <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
                             </div>
                             <?= $this->session->flashdata('salah_login');?>                            
@@ -30,7 +30,7 @@
                                 <div class="form-group first">
                                     <label for="username">Nama Anda</label>                                    
                                     <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Anda">
-                                    <?php echo form_error('nama', '<div class="text-danger small mt-2">', '</div>'); ?>                                
+                                    <?php echo form_error('nama', '<div class="text-danger small mt-2">', '</div>'); ?>                               
                                 </div>
                                 <div class="form-group first">
                                     <label for="username">Username Anda</label>                                    

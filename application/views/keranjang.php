@@ -33,8 +33,11 @@
   
         <a href="<?= base_url('dashboard/hapus_keranjang')?>" class="btn btn-danger"><i class="fa fa-trash"></i> Hapus Keranjang</a>
         <a href="<?= base_url('Product/index')?>" class="btn btn-warning" ><i class="fa fa-cart-plus"></i> Lanjutkan Belanja</a>
-        <a href="<?= base_url('dashboard/pembayaran')?>" class="btn btn-success"><i class="fa fa-money"></i> Bayar</a>
+        <a href="https://app.sandbox.midtrans.com/payment-links/1734572036397" class="btn btn-success" target="_blank">
+    <i class="fa fa-money"></i> Bayar
+</a>
 
+        <a href="<?= base_url('dashboard/pembayaran')?>" class="btn btn-primary"><i class="fa fa-download"></i> Upload Bukti</a>
     </div>
 
 </div>

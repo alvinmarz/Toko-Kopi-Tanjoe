@@ -2,10 +2,10 @@
 class model_pesan extends CI_Model {
  
     public function hitung_data_pesan() {
-        return $this->db->get('tb_pesan')->num_rows();
+        return $this->db->get('tb_detail_pesanan')->num_rows();
     }
     public function tampil_data_pesan($limit, $start) {
-        return $this->db->get('tb_pesan', $limit, $start);
+        return $this->db->get('tb_detail_pesanan', $limit, $start);
     }
     public function tambah_pesan($data, $table) {
         $this->db->insert($table, $data);
@@ -15,6 +15,7 @@ class model_pesan extends CI_Model {
         $this->db->where($where);
         $this->db->delete($table);
     }
+    
 }
 
 

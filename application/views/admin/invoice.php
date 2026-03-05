@@ -35,7 +35,7 @@
                                 <td><?= $inv->jasa; ?></td>
                                 <td><?= $inv->bank; ?></td>
                                 <td><?= $inv->tgl_pesan; ?></td>             
-                                <td><?= anchor('admin/invoice/detail/'.$inv->id, '<div class = " btn btn-sm btn-warning">Detail</div>') ; ?></td>                   
+                                <td><?= anchor('admin/invoice/detail/'.$inv->id_invoice, '<div class = " btn btn-sm btn-warning">Detail</div>') ; ?></td>
                             </tr>
                     <?php endforeach; ?>
                 <?php endif; ?>
@@ -44,21 +44,9 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                    <div>
-                        <a href="#">Privacy Policy</a>
-                        &middot;
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
+                    <div class="text-muted">Copyright &copy; AAW 2023</div>                    
                 </div>
             </div>
         </footer>
     </div>
 </div>
-
-<script>
-    function hapus_function() {
-        confirm('Yakin dihapus?');
-
-    }
-</script>

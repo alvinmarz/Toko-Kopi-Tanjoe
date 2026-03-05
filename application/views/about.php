@@ -14,7 +14,7 @@
     <?php $this->load->view('templates/navbar') ; ?>
 
     <!-- Page Content -->
-    <div class="page-heading about-heading header-text">
+    <div class="page-heading products-heading-gayoaceh header-text">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -38,13 +38,42 @@
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image2.jpg" alt="">
+              <img src="assets/images/logo_resmi.jpg" alt="">
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>Who we are &amp; What we do?</h4>
-              <p>we are here selling a variety of equipment for your convenience in playing the game. We sell everything from gaming gear to gaming chairs. The goods we sell are also the best quality goods</p>
+              <h4>Siapa Kami &amp; Apa Yang Menarik dari kami?</h4>
+              <p>Tanjoe Coffee adalah toko kopi yang menghadirkan keanekaragaman cita rasa kopi Nusantara dalam satu tempat. Dengan koleksi biji kopi pilihan dari berbagai penjuru Indonesia, seperti Aceh Gayo yang kaya aroma, Toraja yang bercita rasa kuat, Bali Kintamani dengan sentuhan buah yang segar, hingga Flores Bajawa yang lembut, Tanjoe menjadi surga bagi para pecinta kopi sejati. Toko ini didesain dengan nuansa hangat dan estetik, menampilkan rak kayu klasik berisi toples-toples kopi berlabel dari setiap daerah, dinding bata ekspos dengan logo besar "Tanjoe" yang ikonik, serta peta Indonesia yang menunjukkan lokasi penghasil kopi terbaik di tanah air. Suasana yang nyaman dan aroma kopi yang khas membuat setiap pelanggan betah menikmati keunikan kopi Nusantara di Tanjoe Coffee</p>
+              <ul class="social-icons">
+                <li><a href="https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="find-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Location on Maps</h2>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div id="map">
+              <iframe src="https://maps.google.com/maps?q=Yogyakarta&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="left-content">
+              <h4>Tentang Kantor Kami</h4>
+              <p>Toko Kopi Tanjoe adalah destinasi bagi pecinta kopi sejati yang ingin merasakan kekayaan cita rasa biji kopi Nusantara yang berlokasi di Yogyakarta. Nikmati secangkir kopi yang penuh cerita bersama Tanjoe!.</p>
               <ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -57,41 +86,7 @@
       </div>
     </div>
 
-    <!-- ============= COMPANY ========= -->
-    
-    <div class="happy-clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">  
-          </div>
-          <div class="col-md-12">
-            <div class="owl-clients owl-carousel">
-              <div class="client-item">
-                <img src="assets/images/about_us/rexus_logo.png" alt="1">
-              </div>
-              
-              <div class="client-item">
-              <img src="assets/images/about_us/rexus_razer.png" alt="2">
-              </div>
-              
-              <div class="client-item">
-              <img src="assets/images/about_us/rexus_nemesis.png" alt="3">
-              </div>
-              
-              <div class="client-item">
-              <img src="assets/images/about_us/fantech_logo.png" alt="4">
-              </div>
-              
-              <div class="client-item">
-              <img src="assets/images/about_us/steelseries_logo.png" alt="5">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    
     <div class="team-members">
       <div class="container">
         <div class="row">
@@ -103,11 +98,11 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_01.jpg" alt="">
+                <img src="assets/images/Our1.png" alt="">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="#"><i class="fa fa-behance"></i></a></li>
@@ -116,16 +111,17 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Johnny William</h4>
-                <span>CO-Founder</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <h4>Fadhalfin Mars Agi Putra</h4>
+                <span>22.12.2518</span>
+                <p>Programmer</p>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_02.jpg" alt="">
+                <img src="assets/images/Our2.png" alt="">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -138,128 +134,15 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Karry Pitcher</h4>
-                <span>Product Expert</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <h4>Muhammaf Arif Prasojo</h4>
+                <span>22.12.2512</span>
+                <p>Perancangan dan Laporan</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="team-member">
-              <div class="thumb-container">
-                <img src="assets/images/team_03.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="hover-content">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="down-content">
-                <h4>Michael Soft</h4>
-                <span>Chief Marketing</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-member">
-              <div class="thumb-container">
-                <img src="assets/images/team_04.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="hover-content">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="down-content">
-                <h4>Mary Cool</h4>
-                <span>Product Specialist</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-member">
-              <div class="thumb-container">
-                <img src="assets/images/team_05.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="hover-content">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="down-content">
-                <h4>George Walker</h4>
-                <span>Product Photographer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-member">
-              <div class="thumb-container">
-                <img src="assets/images/team_06.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="hover-content">
-                    <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="down-content">
-                <h4>Kate Town</h4>
-                <span>General Manager</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-    <div class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <center>
-              <h3 class="text-white">only for gamers and only for winners</h3>
 
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-12">            
-              <b>
-                <p>Made &copy; 2023 AAW STORE. </p>
-              </b>
-          </div>
-        </div>
-      </div>
-    </footer>
 
 
     <!-- Bootstrap core JavaScript -->

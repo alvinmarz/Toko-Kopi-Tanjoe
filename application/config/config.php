@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/toko_online_komputer/';
+// $config['base_url'] = 'http://localhost:9000/toko_online_komputer/';
+$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$host = $_SERVER['HTTP_HOST'];
+$config['base_url'] = $protocol . $host . '/toko_kopi_tanjoe/';
+
 
 /*
 |--------------------------------------------------------------------------

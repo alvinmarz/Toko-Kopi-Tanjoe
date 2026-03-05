@@ -27,76 +27,27 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Kategori Barang</label>
-                        <input type="text" name="nama_brg" class="form-control my-4" value="<?= $brg->kategori; ?>" disabled="false" />
-
+                        <?php $kategori = $brg->kategori; ?>
                         <select class="custom-select custom-select-lg mb-3 form-control" name="kategori">
-                            <option selected><?= $brg->kategori; ?> </option>
-                            <?php if ($brg->kategori == "Mousepad") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Vga">VGA</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Keyboard") : ?>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Vga">VGA</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Kursi") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Vga">VGA</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Mouse") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Vga">VGA</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Headset") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Vga">VGA</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Vga") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Game">GAME</option>
-                            <?php endif; ?>
-                            <?php if ($brg->kategori == "Game") : ?>
-                                <option value="Keyboard">Keyboard</option>
-                                <option value="Kursi">Kursi</option>
-                                <option value="Mouse">Mouse</option>
-                                <option value="Headset">Headset</option>
-                                <option value="Vga">VGA</option>
-                            <?php endif; ?>
+                            <option value="" <?= $kategori == "" ? "selected" : "" ?>>Pilih Kategori</option>
+                            <option value="Kursi" <?= $kategori == "Gayo_Aceh" ? "selected" : "" ?>>Gayo Aceh</option>
                         </select>
                     </div>
                     <!-- KATEGORI 2 -->
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Best Product / Tidak</label>
+                        <label for="exampleInputPassword1" class="form-label">Pilih Best Product / Tidak</label>
                         <input type="text" name="nama_brg" class="form-control my-4" value="<?= $brg->kategori2; ?>" disabled="false" />
 
                         <select class="custom-select custom-select-lg mb-3 form-control" name="kategori2">
-                            <option selected><?= $brg->kategori2; ?> </option>
+                            
+                        <option selected><?= $brg->kategori2; ?> </option>
                             <?php if ($brg->kategori2 == "Best Product") : ?>
                                 <option value="Biasa">--- Umum ---</option>
-                       
                             <?php endif; ?>
                             <?php if ($brg->kategori2 !== "Best Product") : ?>
                                 <option value="Best Product">Best Product</option>
                             <?php endif; ?>
+                            
                         </select>
                     </div>
 
@@ -113,11 +64,11 @@
                         <label for="exampleInputPassword1" class="form-label">Gambar Barang</label>
                         <div class="card my-3" style="width: 18rem;">
 
-                        <?php
+                            <?php
                             $path = "/uploads_barang/";
                             $nama_folder = $brg->kategori;
-                        ?>
-                                <img src="<?= base_url() . $path, $nama_folder.'/' . $brg->gambar; ?>" class="form-control card-img-top">
+                            ?>
+                            <img src="<?= base_url() . $path, $nama_folder . '/' . $brg->gambar; ?>" class="form-control card-img-top">
                             <div class="card-body">
                                 <p class="card-text"><?= $brg->gambar; ?></p>
                             </div>
@@ -142,7 +93,7 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                <div class="text-muted">Copyright &copy; Toko Kopi Tanjoe 2024</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;

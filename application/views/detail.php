@@ -52,3 +52,21 @@
         </div>
     </div>
 </div>
+<script>
+    function updateTotal() {
+        var hargaPerGram = <?php echo $brg->harga; ?>;
+        var jumlahGram = document.getElementById('jumlah_gram').value;
+        var totalHarga = hargaPerGram * jumlahGram;
+        
+        // Update total harga di halaman
+        document.getElementById('total_harga').innerHTML = "Rp. " + totalHarga.toLocaleString();
+    }
+
+    function addToCart(id_brg) {
+        var jumlahGram = document.getElementById('jumlah_gram').value;
+        var totalHarga = document.getElementById('total_harga').innerHTML.replace('Rp. ', '').replace('.', '');
+        
+        // Mengarahkan ke controller untuk menambahkan ke keranjang dengan jumlah dan harga yang diperbarui
+        window.location.href = "<?php echo base_url('dashboard/tambah_ke_keranjang/'); ?>" + id_brg + "/" + jumlahGram + "/" + totalHarga;
+    }
+</script>

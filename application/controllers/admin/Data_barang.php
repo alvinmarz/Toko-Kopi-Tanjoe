@@ -12,11 +12,13 @@ class Data_barang extends CI_Controller
 
     public function index()
     {
-        // $data['barang'] = $this->model_barang->tampil_data()->result();
         // Load library
         $this->load->library('pagination');
+        
         // Config
-        $config['base_url'] = 'http://localhost/toko_online_komputer/admin/data_barang/index';
+        $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        $host = $_SERVER['HTTP_HOST'];
+        $config['base_url'] = $protocol . $host . '/toko_online_komputer/admin/data_barang/index';
         $config['total_rows'] = $this->model_barang->hitung_data();
         $config['per_page'] = 5;
         
@@ -67,25 +69,29 @@ class Data_barang extends CI_Controller
         $stok           = $this->input->post('stok');
         $gambar    = $_FILES['gambar']['name'];
         if ($gambar = '') {
-        } else {
-            
-            $mousepadd = "Mousepad";
-            $mouse = "Mouse";
-            $keyboard = "Keyboard";            
+        } else {           
+            $Gayopadd = "Gayopad";
+            $Gayo = "Gayo";
+            $keyboard = "Keyboard";                 
             $headset = "Headset";
+            $Gayo_Aceh = "Gayo_Aceh";
+            
 
-            if ($kategori == $mousepadd) {                                       
-                $config['upload_path']     = './uploads_barang/Mousepad/' ;                                             
-            } elseif ($kategori == $mouse) {
-                $config['upload_path']     = './uploads_barang/Mouse/';                
+            if ($kategori == $Gayopadd) {                                       
+                $config['upload_path']     = './uploads_barang/Gayopad/' ;                                             
+            } elseif ($kategori == $Gayo) {
+                $config['upload_path']     = './uploads_barang/Gayo/';                
                 # code...
+            } elseif ($kategori == $keyboard) {
+                $config['upload_path']     = './uploads_barang/Keyboard/';    
             } elseif ($kategori == $keyboard) {
                 $config['upload_path']     = './uploads_barang/Keyboard/';    
             } elseif ($kategori == $headset) {
                 $config['upload_path']     = './uploads_barang/Headset/';    
+            } elseif ($kategori == $Gayo_Aceh) {
+                $config['upload_path']     = './uploads_barang/Gayo_Aceh/';    
             } elseif ($kategori2 == "Best Product") {
                 $config['upload_path']     = './uploads_barang/Best/'; 
-
             }
   
             // ========= DAAH BENER ===========
@@ -114,6 +120,7 @@ class Data_barang extends CI_Controller
         $this->session->set_flashdata('success_tambahsurat','Data berhasil ditambah');
         redirect('admin/Data_barang');
     }
+    
     public function edit($id)
     {
         $where = array('id_brg' => $id);
@@ -122,6 +129,7 @@ class Data_barang extends CI_Controller
         $this->load->view('admin/edit_barang', $data);
         $this->load->view('templatesAdmin/footer');
     }
+    
     public function update()
     {
         $id             = $this->input->post('id_brg');

@@ -84,10 +84,9 @@ class Pesan extends CI_Controller {
         $this->session->set_flashdata('success_hapuspesan',' ');
         redirect('admin/pesan');
         echo "<script>alert('Data berhasil di hapus')</script>";
-        
-        
-        
     }
+    
+    
 
 
 

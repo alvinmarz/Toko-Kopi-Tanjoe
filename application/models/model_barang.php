@@ -1,14 +1,14 @@
-<?php 
-class Model_barang extends CI_Model {
-    // public function tampil_data() {
-    //     $this->db->order_by("kategori", "desc");
-    //     return $this->db->get('tb_barang');
-    // }
-    public function tampil_data_best() {
-        $this->db->where('kategori2','Best Product');
+<?php
+class Model_barang extends CI_Model
+{
+
+    public function tampil_data_best()
+    {
+        $this->db->where('kategori2', 'Best Product');
         return $this->db->get('tb_barang');
     }
-    public function hitung_data() {
+    public function hitung_data()
+    {
         return $this->db->get('tb_barang')->num_rows();
     }
     public function find($id)
@@ -16,7 +16,6 @@ class Model_barang extends CI_Model {
         // Untuk mencari record data berdasarkan id
         $result = $this->db->where('id_brg', $id)->limit(1)->get('tb_barang');
         if ($result->num_rows() > 0) {
-            echo "<script>alert('jdsi')</script>";
             return $result->row();
         } else {
             return array();
@@ -27,135 +26,112 @@ class Model_barang extends CI_Model {
         // Untuk mencari record data berdasarkan id
         $result = $this->db->where('id_brg', $id)->limit(1)->get('tb_barang');
         if ($result->num_rows() > 0) {
-            echo "<script>alert('jdsi')</script>";
             return $result->row();
         } else {
             return array();
         }
     }
 
-// ====== Mouse Product ====
-    public function data_mouse() {
-        $this->db->where('kategori','Mouse');
+    // ====== Gayo Product ====
+    public function data_Gayo()
+    {
+        $this->db->where('kategori', 'Gayo');
         return $this->db->get('tb_barang');
     }
-    public function hitung_data_mouse() {
-        $this->db->where('kategori','Mouse');
+    public function hitung_data_Gayo()
+    {
+        $this->db->where('kategori', 'Gayo');
         return $this->db->get('tb_barang')->num_rows();
     }
-    public function data_product_mouse() {
-        $this->db->where('kategori','Mouse');
+    public function data_product_Gayo()
+    {
+        $this->db->where('kategori', 'Gayo');
         // $result = $this->db->get('tb_barang',3,0);
-        $result = $this->db->get('tb_barang',3,0);
+        $result = $this->db->get('tb_barang', 3, 0);
         // return $this->db->get('tb_barang', $limit, $start);
         return $result;
     }
-// ====== Mouse Product ====
+    // ====== Gayo Product ====
 
-// ====== Mousepad Product ====
-    public function data_mousepad() {
-        $this->db->where('kategori','Mousepad');
+    // ====== Gayo Product ====
+    public function data_Gayopad()
+    {
+        $this->db->where('kategori', 'Gayopad');
         return $this->db->get('tb_barang');
     }
-    public function hitung_data_mousepad() {
-        $this->db->where('kategori','Mousepad');
+    public function hitung_data_Gayopad()
+    {
+        $this->db->where('kategori', 'Gayopad');
         return $this->db->get('tb_barang')->num_rows();
     }
-    public function data_product_mousepad() {
-        $this->db->where('kategori','Mousepad');
-        $result = $this->db->get('tb_barang',3,0);
+    public function data_product_Gayopad()
+    {
+        $this->db->where('kategori', 'Gayopad');
+        $result = $this->db->get('tb_barang', 3, 0);
         // return $this->db->get('tb_barang', $limit, $start);
         return $result;
     }
 
-// ====== Mousepad Product ====
 
-// ====== Keyboard Product ====
-    public function data_keyboard() {
-        $this->db->where('kategori','Mouse');
+    // ====== Gayo_Aceh ====
+    public function data_Gayo_Aceh()
+    {
+        $this->db->where('kategori', 'Gayo_Aceh');
         return $this->db->get('tb_barang');
     }
-    public function hitung_data_keyboard() {
-        $this->db->where('kategori','keyboard');
+    public function hitung_data_Gayo_Aceh()
+    {
+        $this->db->where('kategori', 'Gayo_Aceh');
         return $this->db->get('tb_barang')->num_rows();
     }
-    public function data_product_keyboard() {        
-        $this->db->where('kategori','Keyboard');
-        $result = $this->db->get('tb_barang',3,0);
+    public function data_product_Gayo_Aceh()
+    {
+        $this->db->where('kategori', 'Gayo_Aceh');
+        $result = $this->db->get('tb_barang', 3, 0);
         // return $this->db->get('tb_barang', $limit, $start);
         return $result;
     }
-// ====== Keyboard Product ====
+    // ====== Gayo_Aceh  ====
 
-// ====== Headset Product ====
-    public function data_headset() {
-        $this->db->where('kategori','Headset');
-        return $this->db->get('tb_barang');
-    }
-    public function hitung_data_headset() {
-        $this->db->where('kategori','Headset');
-        return $this->db->get('tb_barang')->num_rows();
-
-    }
-    public function data_product_headset() {
-        $this->db->where('kategori','Headset');
-        $result = $this->db->get('tb_barang',3,0);
-        // return $this->db->get('tb_barang', $limit, $start);
-        return $result;
-    }
-// ====== Headset Product ====
-
-
-
-// ====== Kursi Gaming ====
-    public function data_kursi() {
-        $this->db->where('kategori','Kursi');
-        return $this->db->get('tb_barang');
-    }
-    public function hitung_data_kursi() {
-        $this->db->where('kategori','Kursi');
-        return $this->db->get('tb_barang')->num_rows();
-    }
-    public function data_product_kursi() {
-        $this->db->where('kategori','Kursi');
-        $result = $this->db->get('tb_barang',3,0);
-        // return $this->db->get('tb_barang', $limit, $start);
-        return $result;
-    }
-// ====== Kursi Gaming ====
-
-// ====== ADMIN =====
-    public function tampil_data_admin($limit, $start) {
+    // ====== ADMIN =====
+    public function tampil_data_admin($limit, $start)
+    {
         return $this->db->get('tb_barang', $limit, $start);
     }
-    public function tampil_data() {
-       
+    public function tampil_data()
+    {
+
         return $this->db->get('tb_barang');
-    }    
+    }
     public function detail_brg($id_brg)
     {
-        $query = $this->db->where('id_brg',$id_brg)->get('tb_barang');
+        $query = $this->db->where('id_brg', $id_brg)->get('tb_barang');
         if ($query->num_rows() > 0) {
             return $query->result();
         } else {
             return false;
         }
     }
-    public function tambah_barang($data,$table) {
-        
+
+    public function tambah_barang($data, $table)
+    {
+
         $this->db->insert($table, $data);
     }
-    public function edit_barang($where, $table) {
-        
+    public function edit_barang($where, $table)
+    {
+
         return $this->db->get_where($table, $where);
     }
-    public function update_data($where, $data, $table) {
+    public function update_data($where, $data, $table)
+    {
         $this->db->where($where);
         $this->db->update($table, $data);
     }
-// ====== ADMIN =====
+    // ====== ADMIN =====
     // ======== get data by id =========
-    public function getDataById($id) {
+    public function getDataById($id)
+    {
         return $this->db->get_where('tb_barang', array('id_brg' => $id));
     }
     // public function hapus_data($where, $table) {
@@ -167,6 +143,79 @@ class Model_barang extends CI_Model {
         $this->db->where('id_brg', $id);
         return $this->db->delete('tb_barang');
     }
+    public function ambil_user_item()
+    {
+        $this->db->select('tb_pesanan.id_user, tb_pesanan.id_brg, tb_pesanan.jumlah, tb_barang.kategori, tb_barang.gambar, tb_barang.nama_brg, tb_barang.harga');
+        $this->db->from('tb_pesanan');
+        $this->db->join('tb_barang', 'tb_pesanan.id_brg = tb_barang.id_brg', 'inner');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 
+    public function hitung_similarity($dataItem)
+    {
+        $user_item_matrix = [];
+        $similarity_matrix = [];
+        foreach ($dataItem as $row) {
+            $user_item_matrix[$row['id_user']][$row['id_brg']] = $row['jumlah'];
+        }
+        foreach ($user_item_matrix as $userA => $itemsA) {
+            foreach ($user_item_matrix as $userB => $itemsB) {
+                if ($userA != $userB) {
+                    $dot_product = 0;
+                    $normA = 0;
+                    $normB = 0;
 
+                    foreach ($itemsA as $item => $valueA) {
+                        $valueB = isset($itemsB[$item]) ? $itemsB[$item] : 0;
+                        $dot_product += $valueA * $valueB;
+                        $normA += pow($valueA, 2);
+                        $normB += pow($valueB, 2);
+                    }
+
+                    $normA = sqrt($normA);
+                    $normB = sqrt($normB);
+
+                    if ($normA > 0 && $normB > 0) {
+                        $similarity_matrix[$userA][$userB] = $dot_product / ($normA * $normB);
+                    } else {
+                        $similarity_matrix[$userA][$userB] = 0;
+                    }
+                }
+            }
+        }
+
+        return $similarity_matrix;
+    }
+    public function ambil_rekomendasi($user_id, $dataItem, $similarity_matrix)
+    {
+        if (empty($dataItem) || empty($similarity_matrix) || !isset($similarity_matrix[$user_id])) {
+            return [];
+        }
+        $user_item_matrix = [];
+        $rekomendasi = [];
+        foreach ($dataItem as $row) {
+            if (isset($row['id_user'], $row['id_brg'], $row['jumlah'])) {
+                $user_item_matrix[$row['id_user']][$row['id_brg']] = $row['jumlah'];
+            }
+        }
+        if (!isset($user_item_matrix[$user_id])) {
+            $user_item_matrix[$user_id] = [];
+        }
+        foreach ($similarity_matrix[$user_id] as $similar_user => $similarity_score) {
+            if (isset($user_item_matrix[$similar_user])) {
+                foreach ($user_item_matrix[$similar_user] as $item => $value) {
+                    if (!isset($user_item_matrix[$user_id][$item])) {
+                        if (!isset($rekomendasi[$item])) {
+                            $rekomendasi[$item] = 0;
+                        }
+                        $rekomendasi[$item] += $similarity_score * $value;
+                    }
+                }
+            }
+        }
+        arsort($rekomendasi);
+        return array_keys($rekomendasi);
+    }
+    
 }

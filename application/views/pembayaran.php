@@ -31,35 +31,37 @@
                 </div>
                 <div class="form-group">
                     <label>Jasa Pengiriman</label>
-                    <select name="jasa" id="" class="form-control">
-                        <option>JNE</option>
-                        <option>TIKI</option>
-                        <option>POS Indonesia</option>
-                        <option>GOJEK</option>
-                        <option>GRAB</option>
+                    <select name="jasa" class="form-control">
+                        <option value="JNE">JNE</option>
+                        <option value="TIKI">TIKI</option>
+                        <option value="POS Indonesia">POS Indonesia</option>
+                        <option value="GOJEK">GOJEK</option>
+                        <option value="GRAB">GRAB</option>
                     </select>
+
                 </div>
                 <div class="form-group">
-                    <label>Pilih Bank</label>
+                    <label>Pilih Metode Bayar</label>
                     <select name="bank" id="" class="form-control">
+                        <option>Midtrans</option>
                         <option>BCA - 123456</option>
                         <option>BNI - 654321</option>
                         <option>MANDIRI - 123654</option>
                     </select>
                 </div>
-                <div class="form-group">                    
+                <div class="form-group">
                     <label>Masukan Bukti Transfer Anda</label>
                     <input type="file" name="gambar" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-sm btn-primary">Pesan</button>
             </form>
-            <?php
-            } else {
-                // $this->session->flashdata('keranjang_kosong_pembayaran');
-                                
-            }
-            ?>
-            
+        <?php
+                } else {
+                    // $this->session->flashdata('keranjang_kosong_pembayaran');
+
+                }
+        ?>
+
         </div>
         <div class="col-md-2"></div>
     </div>
